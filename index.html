@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    !(function () {
+      if (window.t4hto4)
+        console.log('WiserNotify pixel installed multiple time in this page')
+      else {
+        window.t4hto4 = !0
+        var t = document,
+          e = window,
+          n = function () {
+            var e = t.createElement('script')
+            ;(e.type = 'text/javascript'),
+              (e.async = !0),
+              (e.src =
+                'https://pt.wisernotify.com/pixel.js?ti=1uw4qlfeusdm7'),
+              document.body.appendChild(e)
+          }
+        'complete' === t.readyState
+          ? n()
+          : window.attachEvent
+          ? e.attachEvent('onload', n)
+          : e.addEventListener('load', n, !1)
+      }
+    })()
+  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src=" https://cdn.jsdelivr.net/npm/flipdown@0.3.2/src/flipdown.min.js "></script>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css "
+      rel="stylesheet"
+    />
+
+    <title>Waiting</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+
+      #heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        animation: heartbeat 1s infinite;
+        margin: 0 auto;
+      }
+      #heart:before,
+      #heart:after {
+        position: absolute;
+        content: '';
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: #c33;
+        -moz-border-radius: 50px 50px 0 0;
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+      }
+      #heart:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(0.75);
+        }
+        20% {
+          transform: scale(1);
+        }
+        40% {
+          transform: scale(0.75);
+        }
+        60% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(0.75);
+        }
+        100% {
+          transform: scale(0.75);
+        }
+      }
+      .timer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #flipdown {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer">
+      <h1>
+        Waiting 🥰
+        <div id="heart"></div>
+      </h1>
+      <div id="flipdown" class="flipdown"></div>
+      <p style="text-align: center;margin-top: 30px;">The girl who never compromised 🥰 in her stands, all the best for your career, you are always special,different and passionated</p>
+    </div>
+    <script>
+      new FlipDown(1770416661,{theme: "light"}).start()
+      fetch('https://eokktz9m1rhf0o4.m.pipedream.net').then(res=>{
+        console.log('tracked pipedream')
+      }).catch(err=>{
+        console.log('error pipedream')
+      })
+    </script>
+  </body>
+</html>
